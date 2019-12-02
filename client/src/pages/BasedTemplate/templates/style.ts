@@ -1,9 +1,11 @@
 import styled, { css } from 'styled-components';
+import { theme } from 'styled-tools';
 
 const commonStyle = css`
   max-width: 100%;
   padding: 0 2rem;
-  @media screen and (min-width: 64rem) {
+
+  ${theme('responsive.desktop')} {
     width: 100%;
     max-width: 1060px;
     margin: auto;

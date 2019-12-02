@@ -11,7 +11,7 @@ export const Wrapper = styled.div<Props>`
   background-size: cover;
   background-position: center;
 
-  @media screen and (min-width: 64rem) {
+  ${theme('responsive.desktop')} {
     border-radius: 1rem;
   }
 `;
@@ -30,7 +30,7 @@ export const Container = styled.div`
   width: 100%;
   height: 100%;
 
-  @media screen and (min-width: 64rem) {
+  ${theme('responsive.desktop')} {
     padding: 6rem;
     border-radius: 1rem;
   }
@@ -41,7 +41,7 @@ export const Title = styled.div`
   color: ${palette('white')};
   margin: 2.4rem 0;
 
-  @media screen and (min-width: 64rem) {
+  ${theme('responsive.desktop')} {
     ${theme('fontStyle.h3')};
     margin: 3.7rem 0;
   }

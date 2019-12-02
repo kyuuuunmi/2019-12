@@ -86,6 +86,10 @@ const theme = {
       letter-spacing: 0.015rem;
     `,
   },
+  responsive: {
+    tablet: `@media screen and (min-width: 32rem)`,
+    desktop: `@media screen and (min-width: 76.8rem)`,
+  },
 };
 
 export default theme;

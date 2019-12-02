@@ -1,7 +1,5 @@
 import React from 'react';
-
 import * as S from './style';
-import Btn from '../../atoms/Btn';
 import logo from '../../../assets/img/logo.svg';
 import ROUTES from '../../../commons/constants/routes';
 
@@ -20,7 +18,7 @@ function Header({
 }: Props): React.ReactElement {
   return (
     <S.Container>
-      <Btn
+      <S.LeftNavBtn
         grow={false}
         fit={true}
         styletype={'transparent'}
@@ -28,11 +26,10 @@ function Header({
         to={ROUTES.EVENT_CREATE}
         onClick={onCreateEventBtnClickHandlerick}
       />
-
       <S.StyledLink to={ROUTES.HOME}>
         <S.Img alt={'Logo'} src={logo} />
       </S.StyledLink>
-      <Btn
+      <S.RightNavBtn
         grow={false}
         fit={true}
         styletype={'transparent-border'}
