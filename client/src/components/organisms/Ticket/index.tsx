@@ -2,12 +2,12 @@ import React from 'react';
 
 import * as S from './style';
 import { TicketType } from '../../../types/Data';
-import IconLabel from '../../molecules/IconLabel';
+import { IconLabel } from '@components';
 
 import MultipleUsers from '../../../assets/img/multiple-users-silhouette.svg';
 import Check from '../../../assets/img/check-black.svg';
 import Calendar from '../../../assets/img/calendar-black.svg';
-import Price from '../../atoms/Price';
+import { Price } from '@components';
 
 function Ticket({
   price,

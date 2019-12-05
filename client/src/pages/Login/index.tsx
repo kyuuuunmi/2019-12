@@ -1,7 +1,7 @@
 import React from 'react';
 
 import * as S from './style';
-import IconBtn from '../../components/molecules/IconBtn';
+import { IconBtn } from '@components';
 import { OAUTH_GOOGLE, LOGIN_SOCIAL } from '../../commons/constants/string';
 import googleSvg from '../../assets/img/google.svg';
 import LogoSvg from '../../assets/img/logo.svg';

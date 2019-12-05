@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from './style';
-import GoogleMap from '../../atoms/GoogleMap';
+import { GoogleMap } from '@components';
 
 interface Props {
   place: string;

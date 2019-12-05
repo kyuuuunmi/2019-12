@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 
 import * as S from './style';
-import Btn from '../../atoms/Btn';
+import { Btn } from '@components';
 import logo from '../../../assets/img/logo.svg';
 import ROUTES from '../../../commons/constants/routes';
 import { CREATE_EVENT } from '../../../commons/constants/string';

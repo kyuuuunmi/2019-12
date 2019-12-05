@@ -1,8 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import EventDetailTemplate from './template';
-import EventHeader from 'components/organisms/EventHeader';
-import Ticket from 'components/organisms/Ticket';
-import Place from 'components/organisms/Place';
+import { EventHeader, Ticket, Place } from '@components';
 
 import { EventDataAction, EventDataState } from './store';
 import { useFetch } from '../../hooks/base/useFetch';

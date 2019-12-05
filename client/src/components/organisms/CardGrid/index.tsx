@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from './style';
-import Card from '../../molecules/Card';
+import { Card } from '@components';
 import { Event } from '../../../types/Event';
 
 interface Props {

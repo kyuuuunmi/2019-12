@@ -1,7 +1,7 @@
 import React from 'react';
 
 import * as S from './style';
-import Icon, { IconProps } from '../../atoms/Icon';
+import Icon, { IconProps } from '@components/Icon';
 
 export interface IconLabelProps {
   iconProps: IconProps;

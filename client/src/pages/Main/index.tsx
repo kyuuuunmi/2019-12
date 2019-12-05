@@ -2,8 +2,7 @@ import React, { useState, useCallback } from 'react';
 import axios from 'axios';
 
 import MainTemplate from './template';
-import MainBanner from 'components/organisms/MainBanner';
-import CardGrid from 'components/organisms/CardGrid';
+import { MainBanner, CardGrid } from '@components';
 import { Event } from '../../types/Event';
 import { useIntersect } from '../../hooks';
 
