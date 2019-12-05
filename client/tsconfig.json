@@ -16,7 +16,15 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "paths": {
+      "@components": ["components"],
+      "@components/*": [
+        "components/atoms/*",
+        "components/molecules/*",
+        "components/organisms/*"
+      ]
+    }
   },
   "include": ["src"],
   "exclude": ["node_modules", "build", "scripts"]
