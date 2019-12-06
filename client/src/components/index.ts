@@ -9,6 +9,7 @@ export { default as Label } from './atoms/Label';
 export { default as Price } from './atoms/Price';
 
 export { default as Card } from './molecules/Card';
+export { default as Counter } from './molecules/Counter';
 export { default as FormInput } from './molecules/FormInput';
 export { default as IconBtn } from './molecules/IconBtn';
 export { default as IconLabel } from './molecules/IconLabel';
@@ -22,3 +23,4 @@ export { default as MainBanner } from './organisms/MainBanner';
 export { default as Place } from './organisms/Place';
 export { default as SignUpForm } from './organisms/SignUpForm';
 export { default as Ticket } from './organisms/Ticket';
+export { default as TicketBox } from './organisms/TicketBox';
