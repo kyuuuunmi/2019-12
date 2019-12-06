@@ -1,13 +1,13 @@
 {
   "name": "reserve-server",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "start:prod": "node bin/www.js",
     "start:dev": "nodemon",
     "test": "jest --coverage --verbose",
-    "build": "tsc",
+    "build": "tsc --sourceMap false",
     "format": "prettier --write \"**/*.{spec.ts,ts,tsx,js,jsx,json,scss,css,md}\"",
     "lint": "tsc --noEmit && eslint . --cache --ext .ts,.tsx",
     "lint:fix": "tsc --noEmit && eslint . --cache --fix --ext .ts,.tsx",

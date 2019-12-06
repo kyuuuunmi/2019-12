@@ -19,6 +19,11 @@ export interface Props {
   price: number;
 }
 
+const shortenTitle = (title: string) =>
+  title.length >= EVENT_NAME_MAX_LENGTH
+    ? `${title.slice(0, EVENT_NAME_MAX_LENGTH)}...`
+    : title;
+
 function Card({
   to,
   imgSrc,
@@ -27,11 +32,7 @@ function Card({
   host,
   price,
 }: Props): React.ReactElement {
-  const eventTitle =
-    title.length >= EVENT_NAME_MAX_LENGTH
-      ? `${title.slice(0, EVENT_NAME_MAX_LENGTH)}...`
-      : title;
-
+  const eventTitle = shortenTitle(title);
   return (
     <S.LinkWrapper to={to} data-testid={'main-card'}>
       <S.HeaderWrapper></S.HeaderWrapper>

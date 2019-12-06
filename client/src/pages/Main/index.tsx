@@ -5,17 +5,11 @@ import MainTemplate from './template';
 import { MainBanner, CardGrid } from '@components';
 import { Event } from '../../types/Event';
 import { useIntersect } from '../../hooks';
+import delay from '../../utils/delay';
 
 function Main(): React.ReactElement {
   const [events, setEvents] = useState<Event[]>([]);
   const { REACT_APP_SERVER_URL: SERVER_URL } = process.env;
-
-  const delay = (seconds: number): Promise<void> =>
-    new Promise(resolve =>
-      setTimeout(() => {
-        resolve();
-      }, seconds * 1000),
-    );
 
   const fetchItems = useCallback(async () => {
     const startAt =
@@ -27,7 +21,7 @@ function Main(): React.ReactElement {
       url: `${SERVER_URL}/api/events?cnt=12${startAt}`,
       withCredentials: true,
     });
-    await delay(0.5);
+    await delay(100);
     setEvents([...events, ...data]);
   }, [SERVER_URL, events]);
 
@@ -39,7 +33,9 @@ function Main(): React.ReactElement {
       await fetchItems();
     },
     {
+      root: null,
       threshold: 1.0,
+      rootMargin: '0% 0% 25% 0%',
     },
   );
 
